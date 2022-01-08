@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="rainbow">
+
+            <item>@color/materialRed</item>
+            <item>@color/materialLime</item>
+            <item>@color/materialOrange</item>
+            <item>@color/materialPurple</item>
+
+    </array>
+
+    <array name="border_state_colors">
+        <item>#F44336</item>
+        <!--Default-->
+        <item>@color/colorAccent</item>
+        <!--Wrong-->
+        <item>#F44336</item>
+        <!--Right-->
+        <item>@color/colorAccent</item>
+        <!--Skipped-->
+        <item>@color/colorAccent</item>
+        <!--Current-->
+        <item>#F44336</item>
+        <!--Processed-->
+    </array>
+
+    <array name="indicator_colors">
+        <item>@color/colorWhite</item>
+        <!--Default-->
+        <item>#F44336</item>
+        <!--Wrong-->
+        <item>#F44336</item>
+        <!--Right-->
+        <item>#F44336</item>
+        <!--Skipped-->
+        <item>#F44336</item>
+        <!--Current-->
+        <item>#F44336</item>
+        <!--Processed-->
+    </array>
+
+    <array name="text_state_colors">
+        <item>@android:color/black</item>
+        <!--Default-->
+        <item>@color/colorBlue</item>
+        <!--Wrong-->
+        <item>@color/colorPresent</item>
+        <!--Right-->
+        <item>@color/colorWhite</item>
+        <!--Skipped-->
+        <item>@color/colorWhite</item>
+        <!--Current-->
+        <item>@color/colorWhite</item>
+        <!--Processed-->
+    </array>
+
+
+</resources>

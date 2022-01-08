@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1066222396394",
+    "firebase_url": "https://smil2-a3125.firebaseio.com",
+    "project_id": "smil2-a3125",
+    "storage_bucket": "smil2-a3125.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066222396394:android:4d5f77d7a4f82c59f44893",
+        "android_client_info": {
+          "package_name": "com.visiabletech.smilmobileapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1066222396394-qb7vje87513m1krf3ca5jrmje478tnh0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.visiabletech.smilmobileapp",
+            "certificate_hash": "6766af69e8cec0bba9d299684138b681e4e7e4f9"
+          }
+        },
+        {
+          "client_id": "1066222396394-irp3lg7lk61rgblvljt26cp6opj5t8fn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcSmWs0jjxosNEcZyPt0eE2LnpZRyLT2U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1066222396394-irp3lg7lk61rgblvljt26cp6opj5t8fn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

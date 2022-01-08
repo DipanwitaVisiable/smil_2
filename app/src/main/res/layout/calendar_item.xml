@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    >
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:textColor="#FEFEFF"
+        android:background="@android:color/transparent"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="12"
+        android:textAlignment="center"
+        android:gravity="center"
+        >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/date_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_alignLeft="@+id/date"
+        android:src="@color/colorPrimary"
+        android:visibility="gone" />
+
+</LinearLayout>

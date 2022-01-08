@@ -1,0 +1,13 @@
+<resources>
+    <!--<string name="app_name">SMILMobileApp</string>-->
+    <string name="app_name">SMIL 2</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="privacy_policy"><u>Privacy Policy</u></string>
+    <string name="force_logout">You have already logged in, in another device with this id. Please click OK and login again.</string>
+    <string name="privacyPolicy1">1. Personally identifiable information of the users are kept strictly confidential and never shared with any 3rd party agencies.</string>
+    <string name="privacyPolicy2">2. Terms and clauses of the admission are strictly governed by the administrative authorities.</string>
+    <string name="privacyPolicy3">3. The admission policy is strictly private and will never be disclosed by school authorities.</string>
+    <string name="error_player">error_player</string>
+</resources>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_reasoning"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/tools"
+        android:id="@+id/cardView_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        app:elevation="10dp"
+        app:cardPreventCornerOverlap="false"
+        card_view:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#699BC3"
+            android:layout_height="wrap_content">
+            <!--<TextView
+                android:id="@+id/tv_serial_no"
+                android:text="01"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:backgroundTint="@color/colorWhite"
+                android:background="@drawable/holiday_button_theme"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"/>-->
+            <TextView
+                android:id="@+id/tv_quiz_name"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_17sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textStyle="bold"
+                android:text="Quiz Name"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_below="@+id/tv_quiz_name"
+                android:text="Time: 30 mins"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_total_question"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_toRightOf="@+id/tv_time"
+                android:layout_below="@+id/tv_quiz_name"
+                android:text="Total questions: 20"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/colorWhite"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_test_date"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_below="@+id/tv_time"
+                android:text="Exam date: 10-06-2020"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/colorWhite"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btn_start_test"
+                android:text="Start Test"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/button_round_bg"
+                android:backgroundTint="#0F9E14"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"/>
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <!--<androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/tools"
+        android:id="@+id/cardView_2"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_70sdp"
+        app:elevation="10dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_70sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        card_view:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_margin="@dimen/_3sdp"
+            android:background="#C176CD"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_topic_name"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_17sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:text="Reasoning Ability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_live_class"
+                android:textColor="@color/colorWhite"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:textSize="@dimen/_14sdp"
+                android:layout_alignParentBottom="true"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:text="35 Live classes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>-->
+    </RelativeLayout>
+

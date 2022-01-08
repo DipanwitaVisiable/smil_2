@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+  android:id="@+id/nsv_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/gradient_background">
+
+<RelativeLayout
+  android:id="@+id/parent_linearlayout"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/gradient_background">
+
+  <RelativeLayout
+    android:id="@+id/rl_direction"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    tools:ignore="WebViewLayout">
+
+  <at.blogc.android.views.ExpandableTextView
+    android:id="@+id/tv_direction"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ellipsize="end"
+    android:maxLines="2"
+    android:paddingLeft="@dimen/_5sdp"
+    android:paddingRight="@dimen/_5sdp"
+    android:singleLine="false"
+    android:textSize="@dimen/_14sdp"
+    android:textColor="@android:color/black"
+    tools:ignore="RtlSymmetry" />
+  <WebView
+    android:layout_below="@+id/tv_direction"
+    android:id="@+id/wv_direction"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/_5sdp"
+    android:paddingRight="@dimen/_5sdp"
+    android:scrollbars="none" />
+
+  <Button
+    android:id="@+id/btn_toggle"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_25sdp"
+    android:layout_below="@+id/wv_direction"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:background="@color/colorBlue"
+    android:text="Read More"
+    android:textAllCaps="false"
+    android:textColor="@color/colorWhite"
+    android:textSize="14sp" />
+  </RelativeLayout>
+
+  <LinearLayout
+    android:id="@+id/ll_ques"
+    android:layout_below="@+id/rl_direction"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient_background"
+    android:padding="@dimen/_5sdp"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <TextView
+      android:id="@+id/question_no"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:layout_marginLeft="@dimen/_10sdp"
+      android:background="@android:color/transparent"
+      android:maxHeight="150dp"
+      android:text="Q"
+      android:layout_gravity="center"
+      android:textColor="@android:color/white"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      tools:ignore="HardcodedText,RtlSymmetry" />
+    <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="@dimen/_30sdp"
+      android:layout_weight=".1"
+      android:layout_marginRight="@dimen/_10sdp"
+      />
+  </LinearLayout>
+
+  <WebView
+    android:id="@+id/question_body"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/ll_ques"
+    android:scrollbarStyle="insideOverlay"
+    android:fadeScrollbars="false"
+    android:scrollbars="horizontal" />
+
+  <androidx.core.widget.NestedScrollView
+    android:background="@drawable/gradient_background"
+    android:layout_below="@+id/question_body"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/ans_listView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:divider="@color/colorWhite"
+      android:padding="@dimen/_5sdp"
+      android:scrollbars="none" />
+  </androidx.core.widget.NestedScrollView>
+</RelativeLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.visiabletech.smilmobileapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature android:name="android.hardware.location.gps" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".HealthCardActivity" />
+        <activity android:name=".CommunicationActivity" />
+        <activity android:name=".PTMActivity" />
+        <activity android:name=".AttendanceActivity" />
+        <activity
+            android:name=".ExamDetailsActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ExamActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MedicalStoreActivity" />
+        <activity android:name=".PathologyListActivity" />
+        <activity android:name=".PathologyServicesActivity" />
+        <activity android:name=".PathologyActivity" />
+        <activity android:name=".DoctorListActivity" />
+        <activity android:name=".MedicalDeparmentActivity" />
+        <activity android:name=".MadicalChamberActivity" />
+        <activity android:name=".MediWallentActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity
+            android:name=".activity.SubjectListActivity"
+            android:label="Subjects"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.PayOnlineActivity"
+            android:label="Pay Online"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.SyllabusActivity"
+            android:label="Syllabus"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".activity.ChapterListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PdfOpenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DaysListActivity"
+            android:label="Weekdays"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PeriodListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LiveVideoListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PlayVideoActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.OnlineTestActivity"
+            android:label="Online Test"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SmallQuizTestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ExamFinishActivity"
+            android:label="Test Complete"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.OnlineTestResultActivity"
+            android:label="Result"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SmallQuizViewSolutionActivity"
+            android:label="View Solution"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ViewCommunicationActivity"
+            android:label="Subjects"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+      <activity
+        android:name=".activity.AssignmentTopicListActivity"
+        android:label="Classroom Exam"
+        android:screenOrientation="portrait"
+        tools:ignore="LockedOrientationActivity" />
+
+      <activity
+        android:name=".activity.AssignmentReplyActivity"
+        android:label="Assignment Reply"
+        android:screenOrientation="portrait"
+        tools:ignore="LockedOrientationActivity" />
+
+      <activity
+        android:name=".activity.AssignmentHistoryListActivity"
+        android:label="Assignment View"
+        android:screenOrientation="portrait"
+        tools:ignore="LockedOrientationActivity" />
+
+      <activity
+        android:name=".activity.TermExamActivity"
+        android:label="Term Exam"
+        android:screenOrientation="portrait" />
+
+      <activity
+        android:name=".activity.TermExamQuestionActivity"
+        android:label="Online Exam"
+        android:screenOrientation="portrait" />
+
+      <activity
+        android:name=".activity.CustomPlayerTwoActivity"
+        android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".TimeTableActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".AssigmentActivity" />
+        <activity android:name=".BulletinsActivity" />
+        <activity android:name=".NoticeActivity" />
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".firebase_package.MyFirebaseMessagingService"
+            tools:ignore="ExportedService,InnerclassSeparator">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
